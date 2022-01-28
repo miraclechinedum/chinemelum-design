@@ -381,8 +381,6 @@ body {
     margin-bottom: 3%;
 }
 
-
-
 .nav-con {
   width: 100%;
   padding-right: 25px;
@@ -408,7 +406,8 @@ width: 20px;
 
 .recommended .content {
   border: 3px solid red;
-  margin: auto !important;
+  position: absolute;
+  left: 3%;
 }
 }
 
