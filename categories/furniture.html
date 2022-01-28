@@ -55,7 +55,7 @@
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <button>Logo</button>
+          <button class="navbar-button">Logo</button>
         </a>
         <button
           class="navbar-toggler"
@@ -66,10 +66,16 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+        <i class="fas fa-bars" style="color: #fff"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <form class="d-flex">
+            <!-- <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search Seller, Location, Item"
+              aria-label="Search"
+            /> -->
 
             <div class="input-group">
               <span class="input-group-text" id="basic-addon1">
@@ -85,7 +91,7 @@
             </div>
           </form>
           <a href="" class="navbar-brand nav-btn">
-            <button>Sign In</button>
+            <button class="navbar-button">Sign In</button>
           </a>
         </div>
       </div>
@@ -93,87 +99,103 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-auto sticky-top" style="background: #0f1c21;">
-          <div class="d-flex flex-sm-column flex-row flex-nowrap align-items-center sticky-top">
-              <a href="/" class="d-block p-3 link-dark text-decoration-none" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only">
-                  <i class="bi-bootstrap fs-1"></i>
-              </a>
-              <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
-              id="menu">
-                <li class="nav-item">
-                  <a href="#" class="nav-link align-middle px-0">
-                    <i class="fs-4 bi-house"></i>
-                    <span class="ms-1 d-none d-sm-inline">
-                      <img src="/images/user.png" alt="" />
-                    </span>
-                  </a>
-                </li>
-  
-                <li class="nav-item">
-                  <a href="#" class="nav-link align-middle px-0">
-                    <i class="fs-4 bi-house"></i>
-                    <span class="ms-1 d-none d-sm-inline">
-                      <img src="/images/fashion.png" alt="" />
-                    </span>
-                  </a>
-                </li>
-  
-                <li class="nav-item">
-                  <a href="/categories/electronics.html" class="nav-link align-middle px-0">
-                    <i class="fs-4 bi-house"></i>
-                    <span class="ms-1 d-none d-sm-inline">
-                      <img src="/images/electronics.png" alt="" />
-                    </span>
-                  </a>
-                </li>
-  
-                <li class="nav-item">
-                  <a href="/categories/plants.html" class="nav-link align-middle px-0">
-                    <i class="fs-4 bi-house"></i>
-                    <span class="ms-1 d-none d-sm-inline">
-                      <img src="/images/plants.png" alt="" />
-                    </span>
-                  </a>
-                </li>
-  
-                <li class="nav-item">
-                  <a href="/categories/furniture.html" class="nav-link align-middle px-0">
-                    <i class="fs-4 bi-house"></i>
-                    <span class="ms-1 d-none d-sm-inline">
-                      <img src="/images/ferniture.png" alt="" />
-                    </span>
-                  </a>
-                </li>
-  
-                <li class="nav-item">
-                  <a href="/categories/home-appliances.html" class="nav-link align-middle px-0">
-                    <i class="fs-4 bi-house"></i>
-                    <span class="ms-1 d-none d-sm-inline">
-                      <img src="/images/homeitems.png" alt="" />
-                    </span>
-                  </a>
-                </li>
-  
-                <li class="nav-item">
-                  <a href="/categories/kitchen.html" class="nav-link align-middle px-0">
-                    <i class="fs-4 bi-house"></i>
-                    <span class="ms-1 d-none d-sm-inline">
-                      <img src="/images/kitchen.png" alt="" />
-                    </span>
-                  </a>
-                </li>
-  
-                <li class="nav-item">
-                  <a href="/categories/toy.html" class="nav-link align-middle px-0">
-                    <i class="fs-4 bi-house"></i>
-                    <span class="ms-1 d-none d-sm-inline">
-                      <img src="/images/toys.png" alt="" />
-                    </span>
-                  </a>
-                </li>
-              </ul>
+        <div class="col-sm-auto sticky-top nav-con" style="background: #0f1c21">
+          <div
+            class="d-flex flex-sm-column flex-row flex-nowrap align-items-center sticky-top"
+          >
+            <ul
+              class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+              id="menu"
+            >
+              <li class="nav-item">
+                <a href="#" class="nav-link align-middle px-0">
+                  <span class="ms-1 d-sm-inline">
+                    <img src="/images/user.png" alt="" />
+                  </span>
+                </a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link align-middle px-0 dropbtn">
+                  <span class="ms-1 d-sm-inline">
+                    <img src="/images/fashion.png" alt="" />
+                  </span>
+
+                  <div class="dropdown-content">
+                    <a href="/categories/women-fashion.html">Women's Fashion</a>
+                    <a href="/categories/men-fashion.html">Men's Fashion</a>
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  href="/categories/electronics.html"
+                  class="nav-link align-middle px-0"
+                >
+                  <span class="ms-1 d-sm-inline">
+                    <img src="/images/electronics.png" alt="" />
+                  </span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  href="/categories/plants.html"
+                  class="nav-link align-middle px-0"
+                >
+                  <span class="ms-1 d-sm-inline">
+                    <img src="/images/plants.png" alt="" />
+                  </span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  href="/categories/furniture.html"
+                  class="nav-link align-middle px-0"
+                >
+                  <span class="ms-1 d-sm-inline">
+                    <img src="/images/ferniture.png" alt="" />
+                  </span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  href="/categories/home-appliances.html"
+                  class="nav-link align-middle px-0"
+                >
+                  <span class="ms-1 d-sm-inline">
+                    <img src="/images/homeitems.png" alt="" />
+                  </span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  href="/categories/kitchen.html"
+                  class="nav-link align-middle px-0"
+                >
+                  <span class="ms-1 d-sm-inline">
+                    <img src="/images/kitchen.png" alt="" />
+                  </span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  href="/categories/toy.html"
+                  class="nav-link align-middle px-0"
+                >
+                  <span class="ms-1 d-sm-inline">
+                    <img src="/images/toys.png" alt="" />
+                  </span>
+                </a>
+              </li>
+            </ul>
           </div>
-      </div>
+        </div>
 
       <div class="col-sm p-3 min-vh-100" style="padding-top: 0 !important; padding-left: 0 !important; padding: 0 !important;">
         <div class="unknown-div" style="padding: 0">
