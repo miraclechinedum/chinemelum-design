@@ -365,3 +365,20 @@ body {
     width: 100%;
     max-width: 100%;
   }
+
+  @media (max-width: 713px) {
+.recommended .content {
+  /* border: 3px solid red; */
+  color: #fff;
+  /* padding: 30px; */
+  content: "";
+  position: absolute;
+  top: 57%;
+  /* top: 0; */
+  right: 9%;
+  bottom: 0px;
+  /* left: 0px; */
+  /* margin: 0; */
+  /* background: rgba(212, 127, 0, 0.575); */
+}
+  }
