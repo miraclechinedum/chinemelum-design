@@ -367,11 +367,26 @@ body {
 }
 
 @media (max-width: 713px) {
+.nav-con {
+  width: 100%;
+}
+
 .nav-pills {
   width: 100%;
   display: flex;
   justify-content: space-between !important;
   flex-direction: row !important;
+}
+
+.recommended .content {
+  border: 3px solid red;
+}
+}
+
+@media (max-width: 414px) {
+.recommended .content {
+  border: 3px solid green;
+  /* top: -10% !important; */
 }
 }
 
