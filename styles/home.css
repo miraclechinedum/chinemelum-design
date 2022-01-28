@@ -385,7 +385,10 @@ body {
 
 @media (max-width: 414px) {
 .recommended .content {
-  border: 3px solid green;
+  /* border: 3px solid green; */
+  content: "";
+  position: absolute;
+  
   /* top: -10% !important; */
 }
 }
