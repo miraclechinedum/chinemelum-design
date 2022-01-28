@@ -71,6 +71,38 @@ body {
   width: 30px;
 }
 
+.dropbtn {
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
 /* .unknown-div {
   width: 1274px;
   max-width: 1274px;
@@ -112,6 +144,70 @@ body {
   width: 100%;
 }
 
+.recommended .content {
+  /* border: 3px solid red; */
+  color: #fff;
+  /* padding: 30px; */
+  content: "";
+  position: absolute;
+  top: 27%;
+  right: 9%;
+  bottom: 0px;
+  /* left: 0px; */
+  /* margin: 0; */
+  /* background: rgba(212, 127, 0, 0.575); */
+}
+
+.recommended .content .content-title {
+  /* border: 3px solid green; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.recommended .content .content-title .desc {
+  width: 261px;
+  max-width: 261px;
+  display: flex;
+}
+
+
+
+.recommended .content .img {
+  width: 50px;
+  height: 50px;
+  margin-right: 3%;
+}
+
+.recommended .content .img img {
+  width: 150px;
+  border-radius: 30px;
+
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.recommended .content .content-title .btn {
+  background: transparent;
+  border: none;
+  outline: none;
+
+  /* border: 3px solid green; */
+
+  width: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 7%;
+  border-radius: 90.7502px;
+  background-color: #fff;
+}
+
 .women {
   background-color: #e9b68b;
   padding: 20px 0;
@@ -127,7 +223,6 @@ body {
 }
 
 .women-shows-con {
-  border: 3px solid red;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -211,7 +306,6 @@ body {
 
 .carousel-inner {
     padding: 1em;
-    border: 3px solid red;
     display: flex !important;
     flex-wrap: wrap !important;
   }
