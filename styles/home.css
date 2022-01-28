@@ -1,0 +1,273 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.container {
+  /* max-width: 1279px; */
+  max-width: 100%;
+}
+
+.title {
+  padding: 40px 0px 15px 0px;
+  color: #fff;
+}
+
+.navbar {
+  padding: 20px 50px;
+  background-color: #0f1c21;
+}
+
+.navbar .navbar-brand {
+  width: 350px;
+}
+
+.navbar .d-flex {
+  width: 70%;
+}
+
+.navbar .d-flex .input-group input {
+  background: transparent;
+  border: none;
+  outline: none;
+
+  background: rgba(255, 255, 255, 0.24);
+  padding: 12px 8px;
+  border-radius: 14.3034px;
+}
+
+.navbar .d-flex .input-group input::placeholder {
+  color: rgba(255, 255, 255, 0.555);
+}
+
+.input-group-text {
+  background: rgba(255, 255, 255, 0.24);
+  color: rgba(255, 255, 255, 0.555);
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
+  border: none;
+}
+
+.navbar .nav-btn {
+  display: flex;
+  justify-content: end;
+  text-align: center;
+}
+
+.navbar button {
+  background: transparent;
+  border: none;
+  outline: none;
+
+  padding: 8px 23px;
+  width: 150px;
+  color: #0c051f;
+  font-size: 16px;
+  font-weight: 600;
+  background: #fff;
+  border-radius: 14.3057px;
+}
+
+.nav-pills .nav-item img {
+  width: 30px;
+}
+
+/* .unknown-div {
+  width: 1274px;
+  max-width: 1274px;
+} */
+
+.recommended {
+  background-image: url(/images/recommanded_background.png);
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 105vh;
+  padding: 0;
+}
+
+.recommended .container {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  margin: 0;
+  background: rgba(212, 127, 0, 0.575);
+}
+
+.recommended .container .title h1 {
+  font-size: 27.976px;
+  line-height: 32px;
+  font-weight: bold;
+  /* color: #FFFFFF; */
+}
+
+.recommended .container .fashion {
+  padding: 0;
+  font-weight: bolder;
+}
+
+.recommended .grouped-img img {
+  width: 100%;
+}
+
+.women {
+  background-color: #e9b68b;
+  padding: 20px 0;
+}
+
+.men {
+    background-color: #7E624A;
+}
+
+.women .container .title h1 {
+  font-size: 25.8068px;
+  line-height: 30px;
+}
+
+.women-shows-con {
+  border: 3px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.show-con {
+  width: 350px;
+  color: #fff;
+  margin-bottom: 3%;
+  line-height: 30px;
+  position: relative;
+}
+
+.show-con img {
+  width: 100%;
+  border-radius: 19px;
+}
+
+.show-con h3 {
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.show-con p {
+  font-size: 16px;
+}
+
+.show-con .live-label {
+  top: 8px;
+  padding: 3px 19px;
+  position: absolute;
+  left: 0;
+}
+
+.MultiCarousel {
+  /* float: left; */
+  overflow: hidden;
+  padding: 15px;
+  width: 100%;
+  position: relative;
+  /* display: flex !important; */
+}
+.MultiCarousel .MultiCarousel-inner {
+  transition: 1s ease all;
+  display: flex;
+  justify-content: space-between !important;
+  /* float: left; */
+  /* border: 3px solid black; */
+}
+.MultiCarousel .MultiCarousel-inner .item {
+  /* float: left; */
+  width: 400px !important;
+  margin-right: 1%;
+}
+.MultiCarousel .MultiCarousel-inner .item > div {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  background: #f1f1f1;
+  color: #666;
+}
+.MultiCarousel .leftLst,
+.MultiCarousel .rightLst {
+  position: absolute;
+  border-radius: 50%;
+  top: calc(50% - 20px);
+}
+.MultiCarousel .leftLst {
+  left: 0;
+}
+.MultiCarousel .rightLst {
+  right: 0;
+}
+
+.MultiCarousel .leftLst.over,
+.MultiCarousel .rightLst.over {
+  pointer-events: none;
+  background: #ccc;
+}
+
+
+.carousel-inner {
+    padding: 1em;
+    border: 3px solid red;
+    display: flex !important;
+    flex-wrap: wrap !important;
+  }
+  .card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: #e1e1e1;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @media (min-width: 768px) {
+    .carousel-item {
+      margin-right: 0;
+      flex: 0 0 33.333333%;
+      display: block;
+    }
+    .carousel-inner {
+      display: flex;
+    }
+  }
+  .card .img-wrapper {
+      max-width: 100%;
+      height: 13em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .card img {
+      max-height: 100%;
+  }
+  @media (max-width: 767px) {
+    .card .img-wrapper {
+      height: 17em;
+    }
+  }
+  
+  .cow-con {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cow-con .cow {
+    width: 350px;
+    max-width: 350px;
+    margin: auto;
+    margin-bottom: 5%;
+  }
+
+  .cow-con .cow .show-con {
+    width: 100%;
+    max-width: 100%;
+  }

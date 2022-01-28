@@ -1,0 +1,25 @@
+body {
+    font-family: "Ubuntu", sans-serif;
+}
+
+.fashion-header .title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 40px;
+    justify-content: space-between;
+}
+
+.fashion-header .title h1 {
+    font-size: 58px;
+    line-height: 67px;
+  }
+  
+  .fashion-header .title .ads {
+   background-color: #C4C4C4;
+   text-align: center;
+   font-size: 25px;
+   width: 600px;
+   padding: 30px;
+  }
+  

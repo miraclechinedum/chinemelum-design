@@ -1,0 +1,185 @@
+.top-content-con {
+  /* border: 3px solid red; */
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.streamers-ads {
+  border: 3px solid green;
+  padding: 0;
+  background-color: #000;
+}
+
+.streamers-ads .title {
+  /* border: 3px solid red; */
+  font-weight: bold;
+  text-align: center;
+  font-size: 33.4813px;
+  line-height: 38px;
+  background-color: #fff;
+  color: #000;
+  padding-bottom: 25px;
+}
+
+.streamers-ads ul li {
+  color: #fff;
+  list-style: none;
+  font-size: 15.3078px;
+  line-height: 18px;
+  margin-bottom: 2%;
+}
+
+.streamers-ads ul li span {
+  padding-left: 10px;
+}
+
+.streamers-ads ul li .red {
+  color: #c32424;
+}
+
+.streamers-ads ul li .yellow {
+  color: #fff500;
+}
+
+.streamers-ads ul li .purple {
+  color: #7000ff;
+}
+
+.streamers-ads ul li .blue {
+  color: #000aff;
+}
+
+.streamers-ads .send-message {
+  padding: 10px 20px;
+  background: #5c5c5c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.streamers-ads .send-message p {
+  color: rgb(218, 218, 218);
+  margin-bottom: 0;
+}
+
+.streamers-ads .send-message i {
+  color: #fff;
+}
+
+.streamers-video {
+  border: 3px solid black;
+  padding: 0;
+}
+
+.streamers-video iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.second-div {
+  border: 3px solid purple;
+  background-color: #000;
+  padding: 30px 15px;
+}
+
+.second-div .video-info {
+  display: flex;
+}
+
+.second-div .video-info .img {
+  width: 112px;
+  height: 112px;
+  margin-right: 3%;
+}
+
+.second-div .video-info .img img {
+  width: 150px;
+  border-radius: 30px;
+
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.second-div .video-info .info {
+  color: #fff;
+}
+
+.second-div .video-info .bottom-info-div {
+  width: 300px;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.second-div .video-info .info .bottom-info-div button {
+  background: transparent;
+  border: none;
+  outline: none;
+
+  width: 150px;
+  color: #fff;
+  background: #7e624a;
+  border-radius: 90.7502px;
+}
+
+.second-div .follow-info {
+  display: flex;
+  justify-content: space-around;
+}
+
+.second-div .follow-info .con {
+  text-align: center;
+}
+
+.second-div .follow-info .con .btn {
+  background: transparent;
+  border: none;
+  outline: none;
+
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 7%;
+  border-radius: 90.7502px;
+  background-color: #fff;
+}
+
+.third-div {
+  border: 3px solid green;
+  background-color: #2c3133;
+  padding: 50px 45px !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+.recent-streamed-videos {
+  background-color: #485256;
+  padding: 0 30px;
+}
+
+.recent-streamed-videos .title h1 {
+  font-size: 25.3533px;
+  line-height: 29px;
+}
+
+.recent-streamed-videos .videos-con {
+border: 3px solid black;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin-bottom: 10%;
+}
+
+@media only screen and (max-width: 1340px) {
+  .overall-con {
+    border: 10px solid green !important;
+  }
+}
